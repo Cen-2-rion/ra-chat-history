@@ -1,4 +1,6 @@
-const messages = [{
+import { MessageType } from './types';
+
+const messages: MessageType[] = [{
     id: 'chat-5-1090',
     from: { name: 'Ольга' },
     type: 'message',

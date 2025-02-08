@@ -11,7 +11,6 @@ body {
   color: white;
 }
 
-
 .container {
   margin: 0 auto;
   width: 750px;
@@ -19,7 +18,7 @@ body {
   border-radius: 5px;
 }
 
-.people-list {
+/* .people-list {
   width: 260px;
   float: left;
 }
@@ -59,7 +58,7 @@ body {
 .people-list .status {
   max-width: 150px;
   color: #92959E;
-}
+} */
 
 .chat {
   width: 490px;
@@ -69,7 +68,7 @@ body {
   border-bottom-right-radius: 5px;
   color: #434651;
 }
-.chat .chat-header {
+/* .chat .chat-header {
   padding: 20px;
   border-bottom: 2px solid white;
 }
@@ -93,7 +92,7 @@ body {
   color: #D8DADF;
   font-size: 20px;
   margin-top: 12px;
-}
+} */
 .chat .chat-history {
   padding: 30px 30px 20px;
   border-bottom: 2px solid white;
@@ -143,7 +142,7 @@ body {
 .chat .chat-message {
   padding: 30px;
 }
-.chat .chat-message textarea {
+/* .chat .chat-message textarea {
   width: 100%;
   border: none;
   padding: 10px 20px;
@@ -169,11 +168,11 @@ body {
 }
 .chat .chat-message button:hover {
   color: #75b1e8;
-}
+} */
 
 .online, .offline, .me {
   margin-right: 3px;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .online {
@@ -207,4 +206,24 @@ body {
   content: " ";
   clear: both;
   height: 0;
+}
+
+.chat-history ul li {
+  list-style: none;
+}
+
+.message-typing-indicator {
+  display: flex;
+  gap: 2px;
+  margin-top: 25px;
+}
+
+.message-typing-indicator i {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
 }
